@@ -241,7 +241,7 @@ export class AppComponent implements OnInit {
       }
       
       // Expressão regular básica para verificar o formato do email
-      const emailBasicoPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+      const emailBasicoPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(\.[a-zA-Z]{2,})?$/;
       
       // Verifica primeiro se o email básico é válido
       if (!emailBasicoPattern.test(email)) {
